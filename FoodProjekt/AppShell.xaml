@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FoodProjekt.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FoodProjekt"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+
+        <ShellContent
+         Title="Home"
+         Icon="house.png"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="Home" />
+
+        <ShellContent
+           Title="Nearby Restaurants"
+            Icon="map.png"
+             ContentTemplate="{DataTemplate local:NearbyRestaurantsPage}"
+            Route="Nearby" />
+
+        <ShellContent
+         Title="My Orders"
+          Icon="orders.png"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="Orders" />
+
+    </TabBar>
+
+</Shell>

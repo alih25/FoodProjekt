@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:maps ="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:FoodProjekt.ViewModels"
+             x:DataType="viewmodel:NearbyrestaurantsView"
+    x:Class="FoodProjekt.NearbyRestaurantsPage"
+             Title="NearbyRestaurantsPage">
+    <VerticalStackLayout>
+
+        <Button Text="Show my location" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Margin="0,100,0,0" Command="{Binding CheckLocationCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>
+
